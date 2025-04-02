@@ -26,10 +26,6 @@ const GetUsers = () => {
     fetchUsers();
   }, []);
 
-  const handleDeleteSuccess = (deletedUserId) => {
-    setUsers(users.filter(user => user.id !== deletedUserId));
-  };
-
   return (
     <div>
       {loading && <p>Loading...</p>}
@@ -58,7 +54,6 @@ const GetUsers = () => {
               <td className='px-6 py-2 border-x'>{user.name}</td>
               <td className='px-6 py-2 border-x'>{user.lastname}</td>
               <td className='px-6 py-2 border-x'>{user.position}</td>
-              <td className='px-6 py-2 border-x'><DeleteUsers id={user.id} deleteSuccess={handleDeleteSuccess} /></td>
             </tr>
           )}
         </tbody>
