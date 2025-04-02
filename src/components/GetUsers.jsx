@@ -1,6 +1,5 @@
 import axios from 'axios';
 import React, { useEffect, useState } from 'react'
-import DeleteUsers from './DeleteUsers';
 
 const GetUsers = () => {
   const [users, setUsers] = useState([]);
