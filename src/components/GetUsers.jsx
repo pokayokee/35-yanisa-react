@@ -44,7 +44,6 @@ const GetUsers = () => {
             <th className='px-6 py-2 border text-white'>Name</th>
             <th className='px-6 py-2 border text-white'>Last Name</th>
             <th className='px-6 py-2 border text-white'>Position</th>
-            <th className='px-6 py-2 border text-white'>Action</th>
           </tr>
         </thead>
         <tbody>
