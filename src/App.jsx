@@ -4,6 +4,8 @@ import './index.css'
 import Layout from './components/Layout';
 import Admin from './pages/Admin';
 import Normal from './pages/Normal';
+import User from './pages/User';
+import Owner from './pages/Owner';
 
 const router = createBrowserRouter([
   {
@@ -17,6 +19,8 @@ const router = createBrowserRouter([
     children: [
       {path: "/", element: <Normal /> },
       {path: "admin", element: <Admin /> },
+      {path: "user", element: <User /> },
+      {path: "owner", element: <Owner /> },
     ]
   }
 ]);
