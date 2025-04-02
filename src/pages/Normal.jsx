@@ -3,16 +3,6 @@ import { useNavigate } from 'react-router-dom'
 import Button from '../components/Button';
 
 const Normal = () => {
-  const navigate = useNavigate();
-
-  const handleNavigateUser = () => {
-    navigate("/user")
-  }
-
-  const handleNavigateAdmin = () => {
-    navigate("/admin")
-  }
-
   return (
     <div className='flex flex-col items-center'>
       <h2 className='mt-6 text-5xl font-bold'>Generation Thailand</h2>
